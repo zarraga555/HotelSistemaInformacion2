@@ -82,7 +82,7 @@ if (isset($_SESSION['usuario'])) {
                                             <span aria-hidden="true">&times;</span>
                                         </button>
                                     </div>
-                                    <form action="proveedores.php" method="post">
+                                    <form action="../controller/Employee.php" method="post">
                                         <div class="modal-body">
 
                                             <div class="form-group">
@@ -91,19 +91,19 @@ if (isset($_SESSION['usuario'])) {
                                             </div>
                                             <div class="form-group">
                                                 <label for="nombre">Nombre Completo</label>
-                                                <input type="text" class="form-control" name="nombre" pattern="[A-Za-z0-9_-]{1,15}" required>
+                                                <input type="text" class="form-control" name="nombre" required>
                                             </div>
                                             <div class="form-group">
                                                 <label for="direccion">Sexo</label>
-                                                <select class="form-control">
+                                                <select class="form-control" name="sexoSelecionar">
                                                     <option value="">Seleccionar Opcion</option>
-                                                    <option value="masculino">Masculino</option>
-                                                    <option value="femenino">Femenino</option>
+                                                    <option value="Masculino">Masculino</option>
+                                                    <option value="Femenino">Femenino</option>
                                                 </select>
                                             </div>
                                             <div class="form-group">
                                                 <label for="telefono">Telefono</label>
-                                                <input type="number" class="form-control" name="telefono" pattern="[0-9_-]{1,15}" required>
+                                                <input type="number" class="form-control" name="telefono" pattern="[0-9]{1,15}" required>
                                             </div>
                                             <div class="form-group">
                                                 <label for="telefono">Coreeo Electronico</label>
@@ -115,27 +115,27 @@ if (isset($_SESSION['usuario'])) {
                                             </div>
                                             <div class="form-group">
                                                 <label for="nacionalidad">Nacionalidad</label>
-                                                <select class="form-control">
+                                                <select class="form-control" name="nacionalidadSelect">
                                                     <option value="">Seleccionar Opcion</option>
-                                                    <option value="Afganistán" id="AF">Afganistán</option>
-                                                    <option value="Albania" id="AL">Albania</option>
-                                                    <option value="Alemania" id="DE">Alemania</option>
-                                                    <option value="Andorra" id="AD">Andorra</option>
-                                                    <option value="Angola" id="AO">Angola</option>
-                                                    <option value="Anguila" id="AI">Anguila</option>
-                                                    <option value="Antártida" id="AQ">Antártida</option>
-                                                    <option value="Antigua y Barbuda" id="AG">Antigua y Barbuda</option>
-                                                    <option value="Antillas holandesas" id="AN">Antillas holandesas</option>
-                                                    <option value="Arabia Saudí" id="SA">Arabia Saudí</option>
-                                                    <option value="Argelia" id="DZ">Argelia</option>
-                                                    <option value="Argentina" id="AR">Argentina</option>
-                                                    <option value="Armenia" id="AM">Armenia</option>
-                                                    <option value="Aruba" id="AW">Aruba</option>
-                                                    <option value="Australia" id="AU">Australia</option>
-                                                    <option value="Austria" id="AT">Austria</option>
-                                                    <option value="Azerbaiyán" id="AZ">Azerbaiyán</option>
-                                                    <option value="Bahamas" id="BS">Bahamas</option>
-                                                    <option value="Bahrein" id="BH">Bahrein</option>
+                                                    <option value="Afganistán">Afganistán</option>
+                                                    <option value="Albania">Albania</option>
+                                                    <option value="Alemania">Alemania</option>
+                                                    <option value="Andorra">Andorra</option>
+                                                    <option value="Angola">Angola</option>
+                                                    <option value="Anguila">Anguila</option>
+                                                    <option value="Antártida">Antártida</option>
+                                                    <option value="Antigua y Barbuda">Antigua y Barbuda</option>
+                                                    <option value="Antillas holandesas">Antillas holandesas</option>
+                                                    <option value="Arabia Saudí">Arabia Saudí</option>
+                                                    <option value="Argelia">Argelia</option>
+                                                    <option value="Argentina">Argentina</option>
+                                                    <option value="Armenia">Armenia</option>
+                                                    <option value="Aruba">Aruba</option>
+                                                    <option value="Australia">Australia</option>
+                                                    <option value="Austria">Austria</option>
+                                                    <option value="Azerbaiyán">Azerbaiyán</option>
+                                                    <option value="Bahamas">Bahamas</option>
+                                                    <option value="Bahrein">Bahrein</option>
                                                     <option value="Bangladesh" id="BD">Bangladesh</option>
                                                     <option value="Barbados" id="BB">Barbados</option>
                                                     <option value="Bélgica" id="BE">Bélgica</option>
@@ -184,7 +184,7 @@ if (isset($_SESSION['usuario'])) {
                                                     <option value="España" id="ES">España</option>
                                                     <option value="Estados Unidos" id="US">Estados Unidos</option>
                                                     <option value="Estonia" id="EE">Estonia</option>
-                                                    <option value="c" id="ET">Etiopía</option>
+                                                    <option value="Etiopia">Etiopía</option>
                                                     <option value="Ex-República Yugoslava de Macedonia" id="MK">Ex-República Yugoslava de Macedonia</option>
                                                     <option value="Filipinas" id="PH">Filipinas</option>
                                                     <option value="Finlandia" id="FI">Finlandia</option>
@@ -385,20 +385,20 @@ if (isset($_SESSION['usuario'])) {
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
-                                <form action="proveedores.php" method="post">
+                                <form action="../controller/EmployeeEdita.php" method="post">
                                     <div class="modal-body">
 
                                         <div class="form-group">
                                             <label for="editarCi">C.I / DNI</label>
-                                            <input type="text" class="form-control" name="editarCi" readonly>
+                                            <input type="text" class="form-control" name="editarCi" readonly id="editarCi">
                                         </div>
                                         <div class="form-group">
                                             <label for="editarNombre">Nombre Completo</label>
-                                            <input type="text" class="form-control" name="editarNombre" pattern="[A-Za-z0-9_-]{1,15}" required>
+                                            <input type="text" class="form-control" name="editarNombre" id="editarNombre" required>
                                         </div>
                                         <div class="form-group">
                                             <label for="sexo">Sexo</label>
-                                            <select class="form-control">
+                                            <select class="form-control" id="EditarsexoSelecionar" name="EditarsexoSelecionar">
                                                 <option value="">Seleccionar Opcion</option>
                                                 <option value="masculino">Masculino</option>
                                                 <option value="femenino">Femenino</option>
@@ -406,11 +406,11 @@ if (isset($_SESSION['usuario'])) {
                                         </div>
                                         <div class="form-group">
                                             <label for="editarTelefono">Telefono</label>
-                                            <input type="number" class="form-control" name="editarTelefono" pattern="[0-9_-]{1,15}" required>
+                                            <input type="number" class="form-control" name="editarTelefono" pattern="[0-9_-]{1,15}" id="editarTelefono" required>
                                         </div>
                                         <div class="form-group">
                                             <label for="editarEmail">Coreeo Electronico</label>
-                                            <input type="email" class="form-control" name="EditarEmail" required>
+                                            <input type="email" class="form-control" name="EditarEmail" id="EditarEmail" required>
                                         </div>
                                         <div class="form-group">
                                             <label for="EditarFechaNacimiento">Fecha de Nacimiento</label>
@@ -418,7 +418,7 @@ if (isset($_SESSION['usuario'])) {
                                         </div>
                                         <div class="form-group">
                                             <label for="nacionalidad">Nacionalidad</label>
-                                            <select class="form-control">
+                                            <select class="form-control" id="Editarnacionalidad" name="Editarnacionalidad">
                                                 <option value="">Seleccionar Opcion</option>
                                                 <option value="Afganistán" id="AF">Afganistán</option>
                                                 <option value="Albania" id="AL">Albania</option>
@@ -661,7 +661,7 @@ if (isset($_SESSION['usuario'])) {
                                         </div>
                                         <div class="form-group">
                                             <label for="EditarSalario">Salario en Bs</label>
-                                            <input type="number" class="form-control" name="EditarSalario" required>
+                                            <input type="number" class="form-control" name="EditarSalario" id="EditarSalario" required>
                                         </div>
 
 
@@ -674,11 +674,38 @@ if (isset($_SESSION['usuario'])) {
                             </div>
                         </div>
                     </div>
-
                     <!--FINAL DE MODIFICACION DE  DATOS-->
 
-                    <!--MODALES DE NOTIFICACIONES-->
 
+                    <!-- MODAL DE ELIMINADO LOGICO-->
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalCenterTitle">Elimnar Empleado</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <form action="../controller/EmployeeElimadoLogico.php" method="post">
+                                    <div class="modal-body">
+                                        <input type="hidden" class="form-control" name="EliminarCi" id="EliminarCi" required readonly>
+                                        ¿Estas seguro que deseas elimar el Empleado?
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                        <button type="submit" class="btn btn-danger btn-danger">Eliminar</button>
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FINAL DEL MODAL DE ELIMINADO LOGICO-->
+
+
+
+                    <!--MODALES DE NOTIFICACIONES-->
                     <div aria-live="polite" aria-atomic="true">
                         <div class="toast" id="toast" data-delay="2000" style="background-color:red; position: absolute; top: 100px; right: 50px; border-radius:10rem; color:white;">
                             <div class="toast-body">
@@ -710,11 +737,21 @@ if (isset($_SESSION['usuario'])) {
                             </div>
                         </div>
                     </div>
-
                     <!--FIN DE LOS MODALES DE NOTIFICACIONES-->
+
+
 
                     <div class="row justify-content-center">
                         <div class="col-lg-12">
+                            <?php
+                            require_once "../config/connection/connection.php";
+                            $con = new conectar();
+                            $conexion = $con->conexion();
+
+                            $sql = "SELECT * FROM empleado WHERE estado = 1";
+                            $result = mysqli_query($conexion, $sql);
+
+                            ?>
                             <table id="tabla" class="table  table-condensed">
                                 <tr>
                                     <td>CI / NIT</td>
@@ -728,25 +765,31 @@ if (isset($_SESSION['usuario'])) {
                                     <td>Acciones</td>
                                 </tr>
                                 <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>
-                                        <form action="proveedores.php" method="post">
-                                            <button type="button" class="btn btn-success btn-success " data-toggle="modal" data-target="#exampleModalM">Editar</button>
-                                            <button type="button" class="btn btn-danger btn-danger">Eliminar</button>
-                                        </form>
-                                    </td>
+                                    <?php
+                                    while ($ver = mysqli_fetch_row($result)) :
+                                    ?>
+                                        <td><?php echo $ver[0] ?></td>
+                                        <td><?php echo $ver[1] ?></td>
+                                        <td><?php echo $ver[2] ?></td>
+                                        <td><?php echo $ver[3] ?></td>
+                                        <td><?php echo $ver[4] ?></td>
+                                        <td><?php echo $ver[5] ?></td>
+                                        <td><?php echo $ver[6] ?></td>
+                                        <td><?php echo $ver[7] ?></td>
+                                        <td>
+
+                                            <button type="button" class="btn btn-success btn-success btn-success2 " data-toggle="modal" data-target="#exampleModalM" onclick="ActualizarDatos('<?php echo $ver[0] ?>', '<?php echo $ver[1] ?>' , '<?php echo $ver[3] ?>', '<?php echo $ver[4] ?>', '<?php echo $ver[7] ?>')">Editar</button>
+                                            <button type="button" class="btn btn-danger btn-danger btn-danger2" data-toggle="modal" data-target="#exampleModalCenter" onclick="EliminadoLogico('<?php echo $ver[0] ?>')">Eliminar</button>
+
+                                        </td>
                                 </tr>
+                            <?php endwhile; ?>
                             </table>
                         </div>
                     </div>
                 </div>
+
+
                 <!-- Footer -->
                 <footer class="sticky-footer bg-white">
                     <div class="container my-auto">
@@ -757,6 +800,19 @@ if (isset($_SESSION['usuario'])) {
                 </footer>
             </div>
         </div>
+        <script type="text/javascript">
+            function ActualizarDatos(idempleado, nombre, telefono, email, salario) {
+                $('#editarCi').val(idempleado);
+                $('#editarNombre').val(nombre);
+                $('#editarTelefono').val(telefono);
+                $('#EditarEmail').val(email);
+                $('#EditarSalario').val(salario);
+            }
+
+            function EliminadoLogico(idempleado) {
+                $('#EliminarCi').val(idempleado)
+            }
+        </script>
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
