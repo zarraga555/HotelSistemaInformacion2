@@ -106,7 +106,7 @@ if (isset($_SESSION['usuario'])) {
                                                 <input type="number" class="form-control" name="telefono" pattern="[0-9]{1,15}" required>
                                             </div>
                                             <div class="form-group">
-                                                <label for="telefono">Coreeo Electronico</label>
+                                                <label for="telefono">Correo Electronico</label>
                                                 <input type="email" class="form-control" name="email" required>
                                             </div>
                                             <div class="form-group">
@@ -409,7 +409,7 @@ if (isset($_SESSION['usuario'])) {
                                             <input type="number" class="form-control" name="editarTelefono" pattern="[0-9_-]{1,15}" id="editarTelefono" required>
                                         </div>
                                         <div class="form-group">
-                                            <label for="editarEmail">Coreeo Electronico</label>
+                                            <label for="editarEmail">Correo Electronico</label>
                                             <input type="email" class="form-control" name="EditarEmail" id="EditarEmail" required>
                                         </div>
                                         <div class="form-group">
@@ -759,7 +759,7 @@ if (isset($_SESSION['usuario'])) {
                                     <td>Sexo</td>
                                     <td>Telefono</td>
                                     <td>Email</td>
-                                    <td>Fecha Nacimiento</td>
+                                    <td>Cumpleaños</td>
                                     <td>Nacionalidad</td>
                                     <td>Salario</td>
                                     <td>Acciones</td>
