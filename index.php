@@ -8,6 +8,7 @@
   <title>Iniciar Sesion</title>
   <link rel="icon" href="img/favicon.ico" type="image/png">
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <!-- Borrar esto -->
   <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -25,12 +26,12 @@
           <div class="card-body p-0">
             <!-- form login -->
             <div class="row justify-content-center">
-                <div class="col-lg-5 d-none d-lg-block bg-login-image ">
-                    
-                </div>
-                <hr class=" hr2">
+              <div class="col-lg-5 d-none d-lg-block bg-login-image ">
+
+              </div>
+              <hr class=" hr2">
               <div class="col-lg-6 align-self-end">
-                
+
                 <div class="p-5">
                   <div class="text-center">
                     <h1 class="h4 text-gray-900 mb-4 text-title">Bienvenido</h1>
