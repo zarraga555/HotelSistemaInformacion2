@@ -268,7 +268,7 @@ footer.sticky-footer .copyright {
   .btn-success2 {
     font-size: .7rem;
     border-radius: 15rem;
-    padding: .65rem .7rem;
+    padding: .0rem .65rem;
     color: #fff;
     background-color: #28a745;
     border-color: #28a745;
@@ -279,7 +279,7 @@ footer.sticky-footer .copyright {
   .btn-danger2 {
     font-size: .7rem;
     border-radius: 15rem;
-    padding: .65rem .7rem;
+    padding: 0rem .7rem;
     color: #fff;
     background-color: #bd2130;
     border-color: #b21f2d;
@@ -304,5 +304,10 @@ footer.sticky-footer .copyright {
   flex-flow: row nowrap;
   justify-content: flex-start;
   box-shadow: 0 .15rem 1.75rem 0 rgba(58, 59, 69, .15)!important;
+}
+.table td, .table th {
+  padding: .55rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
 }
 }

@@ -778,8 +778,8 @@ if (isset($_SESSION['usuario'])) {
                                         <td><?php echo $ver[7] ?></td>
                                         <td>
 
-                                            <button type="button" class="btn btn-success btn-success btn-success2 " data-toggle="modal" data-target="#exampleModalM" onclick="ActualizarDatos('<?php echo $ver[0] ?>', '<?php echo $ver[1] ?>' , '<?php echo $ver[3] ?>', '<?php echo $ver[4] ?>', '<?php echo $ver[7] ?>')">Editar</button>
-                                            <button type="button" class="btn btn-danger btn-danger btn-danger2" data-toggle="modal" data-target="#exampleModalCenter" onclick="EliminadoLogico('<?php echo $ver[0] ?>')">Eliminar</button>
+                                            <button type="button" class="btn btn-success btn-success btn-success2 fas fa-pen" data-toggle="modal" data-target="#exampleModalM" onclick="ActualizarDatos('<?php echo $ver[0] ?>', '<?php echo $ver[1] ?>' , '<?php echo $ver[3] ?>', '<?php echo $ver[4] ?>', '<?php echo $ver[7] ?>')"></button>
+                                            <button type="button" class="btn btn-danger btn-danger btn-danger2 fas fa-trash-alt" data-toggle="modal" data-target="#exampleModalCenter" onclick="EliminadoLogico('<?php echo $ver[0] ?>')"></button>
 
                                         </td>
                                 </tr>
