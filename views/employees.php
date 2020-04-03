@@ -56,7 +56,7 @@ if (isset($_SESSION['usuario'])) {
                         <div class="separador"></div>
                         <li>
                             <form method="post" action="../controller/exit.php">
-                                <button name="txtSalir" class="btn btn-primary btn-user btn-block">Cerrar Session</button>
+                                <button name="txtSalir" class="btn btn-primary btn-user btn-block">Cerrar Sesion</button>
                             </form>
                         </li>
                     </ul>
