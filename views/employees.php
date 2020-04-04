@@ -400,8 +400,8 @@ if (isset($_SESSION['usuario'])) {
                                             <label for="sexo">Sexo</label>
                                             <select class="form-control" id="EditarsexoSelecionar" name="EditarsexoSelecionar">
                                                 <option value="">Seleccionar Opcion</option>
-                                                <option value="masculino">Masculino</option>
-                                                <option value="femenino">Femenino</option>
+                                                <option value="Masculino">Masculino</option>
+                                                <option value="Femenino">Femenino</option>
                                             </select>
                                         </div>
                                         <div class="form-group">
@@ -414,7 +414,7 @@ if (isset($_SESSION['usuario'])) {
                                         </div>
                                         <div class="form-group">
                                             <label for="EditarFechaNacimiento">Fecha de Nacimiento</label>
-                                            <input type="date" class="form-control" name="EditarFechaNacimiento" required>
+                                            <input type="date" class="form-control" id="EditarFechaNacimiento" name="EditarFechaNacimiento" required>
                                         </div>
                                         <div class="form-group">
                                             <label for="nacionalidad">Nacionalidad</label>
@@ -778,7 +778,7 @@ if (isset($_SESSION['usuario'])) {
                                         <td><?php echo $ver[7] ?></td>
                                         <td>
 
-                                            <button type="button" class="btn btn-success btn-success btn-success2 fas fa-pen" data-toggle="modal" data-target="#exampleModalM" onclick="ActualizarDatos('<?php echo $ver[0] ?>', '<?php echo $ver[1] ?>' , '<?php echo $ver[3] ?>', '<?php echo $ver[4] ?>', '<?php echo $ver[7] ?>')"></button>
+                                            <button type="button" class="btn btn-success btn-success btn-success2 fas fa-pen" data-toggle="modal" data-target="#exampleModalM" onclick="ActualizarDatos('<?php echo $ver[0] ?>', '<?php echo $ver[1] ?>' , '<?php echo $ver[2] ?>' , '<?php echo $ver[3] ?>', '<?php echo $ver[4] ?>', '<?php echo $ver[5] ?>' , '<?php echo $ver[6] ?>' ,'<?php echo $ver[7] ?>')"></button>
                                             <button type="button" class="btn btn-danger btn-danger btn-danger2 fas fa-trash-alt" data-toggle="modal" data-target="#exampleModalCenter" onclick="EliminadoLogico('<?php echo $ver[0] ?>')"></button>
 
                                         </td>
@@ -801,11 +801,14 @@ if (isset($_SESSION['usuario'])) {
             </div>
         </div>
         <script type="text/javascript">
-            function ActualizarDatos(idempleado, nombre, telefono, email, salario) {
+            function ActualizarDatos(idempleado, nombre, sexo ,telefono, email, fecha, nacionalidad, salario) {
                 $('#editarCi').val(idempleado);
                 $('#editarNombre').val(nombre);
+                $('#EditarsexoSelecionar').val(sexo);
                 $('#editarTelefono').val(telefono);
                 $('#EditarEmail').val(email);
+                $('#EditarFechaNacimiento').val(fecha);
+                $('#Editarnacionalidad').val(nacionalidad);
                 $('#EditarSalario').val(salario);
             }
 
