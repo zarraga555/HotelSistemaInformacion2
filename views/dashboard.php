@@ -33,19 +33,31 @@ if (isset($_SESSION['usuario'])) {
         <div class="wrapper">
             <div class="slid">
                 <img src="img/favicon-96x96.png" alt="">
-                <ul class="sidebar">
+                <nav class="navegacion">
+                    <ul class="sidebar">
 
-                    <li><a href="dashboard.php"><i class="fas fa-home"></i>Dashboard</a></li>
-                    <li><a href="checkin.php"><i class="fas fa-user"></i>Check-in</a></li>
-                    <li><a href="checkout.php"><i class="fas fa-walking"></i>Check-Out</a></li>
-                    <li><a href="employees.php"><i class="fas fa-address-card"></i>Empleados</a></li>
-                    <li><a href="clients.php"><i class="fas fa-restroom"></i>Clientes</a></li>
-                    <li><a href="rooms.php"><i class="fas fa-hotel"></i>Habitaciones</a></li>
-                    <li><a href="products.php"><i class="fas fa-boxes"></i>Productos</a></li>
-                    <li><a href="suppliers.php"><i class="fas fa-pallet"></i>Proveedores</a></li>
-                    <li><a href="reports.php"><i class="fas fa-file-chart-pie"></i>Reportes</a></li>
-                    <li><a href="services.php"><i class="fas fa-parachute-box"></i>Otros Servicios</a></li>
-                </ul>
+                        <li><a href="dashboard.php"><i class="fas fa-home"></i>Dashboard</a></li>
+                        <li><a href="checkin.php"><i class="fas fa-user"></i>Check-in</a></li>
+                        <li><a href="checkout.php"><i class="fas fa-walking"></i>Check-Out</a></li>
+                        <li><a href="employees.php"><i class="fas fa-address-card"></i>Empleados</a></li>
+                        <li><a href="clients.php"><i class="fas fa-restroom"></i>Clientes</a></li>
+                        <li><a href="rooms.php"><i class="fas fa-hotel"></i>Habitaciones</a></li>
+                        <li><a href="products.php"><i class="fas fa-boxes"></i>Productos</a></li>
+                        <li><a href="suppliers.php"><i class="fas fa-pallet"></i>Proveedores</a></li>
+                        <li><a href="reports.php"><i class="fas fa-file-chart-pie"></i>Reportes</a></li>
+                        <li><a href=""><i class="fas fa-parachute-box"></i>Otros Servicios</a>
+                            <ul class="submenu">
+                                <li><a href=""><i class="fas fa-address-card"></i>Empleados Eliminados</a></li>
+                                <li><a href=""><i class="fas fa-restroom"></i>Clientes Eliminados</a></li>
+                                <li><a href=""><i class="fas fa-hotel"></i>Habitaciones Eliminados</a></li>
+                                <li><a href=""><i class="fas fa-hotel"></i>Agregar Pisos y Tipos </a></li>
+                                <li><a href=""><i class="fas fa-boxes"></i>Productos Eliminados</a></li>
+                                <li><a href=""><i class="fas fa-pallet"></i>Proveedores Eliminados</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
             </div>
             <div class="main_content">
                 <nav class="header">

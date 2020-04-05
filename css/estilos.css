@@ -90,6 +90,37 @@ body {
   display: flex;
 }
 
+
+.submenu {
+  position: absolute;
+  background: #fff!important;
+  display: none;
+
+  transition: opacity 3.3s;
+}
+
+
+.submenu li a {
+  display: block;
+
+  color: #000;
+  text-decoration: none;
+}
+
+
+.navegacion li:hover .submenu {
+  display: block;
+  right: -245px;
+  top: -256px;
+
+
+  min-height: auto;
+
+  padding: .5rem .1rem;
+
+  box-shadow: 0 .15rem 5rem 0 rgba(43, 43, 49, 0.336)!important;
+  
+}
 .navTop {
   flex-direction: row;
   margin-left: auto!important;
