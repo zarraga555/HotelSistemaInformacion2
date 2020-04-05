@@ -45,7 +45,7 @@ if (isset($_SESSION['usuario'])) {
                         <li><a href="products.php"><i class="fas fa-boxes"></i>Productos</a></li>
                         <li><a href="suppliers.php"><i class="fas fa-pallet"></i>Proveedores</a></li>
                         <li><a href="reports.php"><i class="fas fa-file-chart-pie"></i>Reportes</a></li>
-                        <li><a href=""><i class="fas fa-parachute-box"></i>Otros Servicios</a>
+                        <li><span> <i class="fas fa-parachute-box"></i>Otros Servicios</span>
                             <ul class="submenu">
                                 <li><a href=""><i class="fas fa-address-card"></i>Empleados Eliminados</a></li>
                                 <li><a href=""><i class="fas fa-restroom"></i>Clientes Eliminados</a></li>

@@ -77,8 +77,21 @@ body {
   display: block;
   text-decoration: none;
 }
+.slid ul li span {
+  text-align: left;
+  padding: 1rem;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  color: #000;
+  display: block;
+  text-decoration: none;
+  background: #fff;;
+}
 
 .slid ul li a .fas {
+  width: 35px;
+}
+.slid ul li span .fas {
   width: 35px;
 }
 
@@ -108,11 +121,11 @@ body {
 }
 
 
-.navegacion li:hover .submenu {
+.slid li:hover .submenu {
   display: block;
-  right: -245px;
+  right: -240px;
   top: -256px;
-
+  z-index: 100;
 
   min-height: auto;
 
