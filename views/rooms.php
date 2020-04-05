@@ -58,12 +58,12 @@ if (isset($_SESSION['usuario'])) {
                     <li><a href="reports.php"><i class="fas fa-file-chart-pie"></i>Reportes</a></li>
                     <li><span> <i class="fas fa-parachute-box"></i>Otros Servicios</span>
                         <ul class="submenu">
-                            <li><a href=""><i class="fas fa-address-card"></i>Empleados Eliminados</a></li>
-                            <li><a href=""><i class="fas fa-restroom"></i>Clientes Eliminados</a></li>
-                            <li><a href=""><i class="fas fa-hotel"></i>Habitaciones Eliminados</a></li>
-                            <li><a href=""><i class="fas fa-hotel"></i>Agregar Pisos y Tipos </a></li>
-                            <li><a href=""><i class="fas fa-boxes"></i>Productos Eliminados</a></li>
-                            <li><a href=""><i class="fas fa-pallet"></i>Proveedores Eliminados</a></li>
+                            <li><a href="roomsDelete.php"><i class="fas fa-address-card"></i>Empleados Eliminados</a></li>
+                            <li><a href="clientsDelete.php"><i class="fas fa-restroom"></i>Clientes Eliminados</a></li>
+                            <li><a href="roomsDelete.php"><i class="fas fa-hotel"></i>Habitaciones Eliminados</a></li>
+                            <li><a href="roomsPisoyTipo.php"><i class="fas fa-hotel"></i>Agregar Pisos y Tipos </a></li>
+                            <li><a href="productsDelete.php"><i class="fas fa-boxes"></i>Productos Eliminados</a></li>
+                            <li><a href="suppliersDelete.php"><i class="fas fa-pallet"></i>Proveedores Eliminados</a></li>
                         </ul>
                     </li>
                 </ul>
