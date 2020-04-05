@@ -168,19 +168,19 @@ body {
   background-color: #CE5F5F;
   border-color: #CE5F5F;
 }
-.btn-primary:hover{
+
+.btn-primary:hover {
   color: #fff;
   background-color: #CE5F5F;
   border-color: #CE5F5F;
 }
+
 .btn-primary.focus, .btn-primary:focus {
   color: #fff;
   background-color: #CE5F5F;
   border-color: #CE5F5F;
-  box-shadow: 0 0 0 0.2rem rgba(38,143,255,.5);
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, .5);
 }
-
-
 
 .wrapper .main_content {
   flex: 1 0 auto;
@@ -210,13 +210,12 @@ body {
   margin-bottom: 20px;
 }
 
-.buton-container{
+.buton-container {
   margin-bottom: 20px;
 }
 
 .cardDas {
   margin-top: 2rem;
-  margin-bottom: 2rem;
   margin-left: 3rem;
   border: 0;
   border: 2px solid rgba(0, 0, 0, .1);
@@ -264,7 +263,7 @@ footer.sticky-footer .copyright {
   margin-top: auto!important;
 }
 
-@media (min-width : 1080px) and (max-width: 1366px){
+@media (min-width: 1080px) and (max-width: 1366px) {
   .btn-success2 {
     font-size: .7rem;
     border-radius: 15rem;
@@ -275,7 +274,6 @@ footer.sticky-footer .copyright {
     height: 32.8px;
     text-align: center;
   }
-  
   .btn-danger2 {
     font-size: .7rem;
     border-radius: 15rem;
@@ -291,23 +289,29 @@ footer.sticky-footer .copyright {
     width: 100%;
     margin-bottom: 1rem;
     color: #212529;
-}
-.slid {
-  background: #fff;
-  min-height: 100vh;
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  padding: .1rem .1rem;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-  box-shadow: 0 .15rem 1.75rem 0 rgba(58, 59, 69, .15)!important;
-}
-.table td, .table th {
-  padding: .55rem;
-  vertical-align: top;
-  border-top: 1px solid #dee2e6;
-}
+  }
+  .slid {
+    background: #fff;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: .1rem .1rem;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    box-shadow: 0 .15rem 1.75rem 0 rgba(58, 59, 69, .15)!important;
+  }
+  .table td, .table th {
+    padding: .55rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+  }
+  .h2title {
+    margin: 0.8rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
 }
