@@ -54,6 +54,24 @@
                 return header('location:../views/rooms.php');
             }
         }
+        public function RestaurarHabitacion($datos){
+            $con = new conectar();
+            $conexion = $con->conexion();
+
+            $status = 1;
+
+            $sql = "UPDATE habitacion SET estado = '$status' WHERE codigo = '$datos[0]'";
+
+            $result = mysqli_query($conexion, $sql);
+
+            if(mysqli_num_rows($result) > 0){
+
+                return header('location:../views/rooms.php');
+
+            }else{
+                return header('location:../views/rooms.php');
+            }
+        }
     }
 
 ?>
