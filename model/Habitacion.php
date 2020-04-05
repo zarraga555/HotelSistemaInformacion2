@@ -6,7 +6,7 @@
             $con = new conectar();
             $conexion = $con->conexion();
             
-            $sql = "INSERT INTO habitacion (pisohabitacion, numerohabitacion, tipohabitacion, cama, precio, descripcion, estado) VALUES ('$datos[0]', '$datos[1]', '$datos[2]', '$datos[3]', '$datos[4]', '$datos[5]', '$datos[6]')";
+            $sql = "INSERT INTO habitacion (pisohabitacion, numerohabitacion, tipohabitacion, cama, precio, descripcion, estadohabitacion, estado) VALUES ('$datos[0]', '$datos[1]', '$datos[2]', '$datos[3]', '$datos[4]', '$datos[5]', '$datos[6]', '$datos[7]')";
 
             $result = mysqli_query($conexion, $sql);
 

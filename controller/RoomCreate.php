@@ -10,10 +10,11 @@
         $cantidad = $_POST['cantidad'];
         $precio =$_POST['precio'];
         $descripcion = $_POST['descripcion'];
+        $statushabitacion = "Disponible";
         $status = 1;
     
         $obj = new habitaciones();
-        $datos = array($piso, $habitacion , $tipo, $cantidad, $precio ,$descripcion, $status);
+        $datos = array($piso, $habitacion , $tipo, $cantidad, $precio ,$descripcion, $statushabitacion, $status);
     
         $obj->AgregarHabitacion($datos);
 ?>

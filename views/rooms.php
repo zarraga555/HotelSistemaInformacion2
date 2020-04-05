@@ -280,7 +280,7 @@ if (isset($_SESSION['usuario'])) {
                         <div class="col-lg-12">
                             <?php
 
-                            $sql = "SELECT habitacion.codigo, pisohabitacion.piso, habitacion.numerohabitacion, tipohabitacion.nombre, habitacion.cama, habitacion.precio, habitacion.descripcion, habitacion.pisohabitacion, habitacion.tipohabitacion FROM habitacion, pisohabitacion, tipohabitacion WHERE (habitacion.pisohabitacion = pisohabitacion.codigo AND habitacion.tipohabitacion = tipohabitacion.codigo) AND habitacion.estado = 1";
+                            $sql = "SELECT habitacion.codigo, pisohabitacion.piso, habitacion.numerohabitacion, tipohabitacion.nombre, habitacion.cama, habitacion.precio, habitacion.descripcion, habitacion.pisohabitacion, habitacion.tipohabitacion, habitacion.estadohabitacion FROM habitacion, pisohabitacion, tipohabitacion WHERE (habitacion.pisohabitacion = pisohabitacion.codigo AND habitacion.tipohabitacion = tipohabitacion.codigo) AND habitacion.estado = 1";
                             $result = mysqli_query($conexion, $sql);
 
                             ?>
@@ -293,6 +293,7 @@ if (isset($_SESSION['usuario'])) {
                                     <td>N° Camas</td>
                                     <td>Precio</td>
                                     <td>Descripcion</td>
+                                    <td>Estado</td>
                                     <td>Acciones</td>
                                 </tr>
                                 <tr>
@@ -306,6 +307,7 @@ if (isset($_SESSION['usuario'])) {
                                         <td><?php echo $ver[4] ?></td>
                                         <td><?php echo $ver[5] ?></td>
                                         <td><?php echo $ver[6] ?></td>
+                                        <td><?php echo $ver[9] ?></td>
                                         <td>
 
                                             <button type="button" class="btn btn-success btn-success btn-success2 fas fa-pen" data-toggle="modal" data-target="#exampleModalM" onclick="ActualizarDatos('<?php echo $ver[0] ?>', '<?php echo $ver[7] ?>' , '<?php echo $ver[2] ?>' , '<?php echo $ver[8] ?>', '<?php echo $ver[4] ?>', '<?php echo $ver[5] ?>', '<?php echo $ver[6] ?>')"></button>
