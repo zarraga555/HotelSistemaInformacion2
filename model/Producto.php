@@ -54,6 +54,25 @@
                 return header('location:../views/products.php');
             }
         }
+
+        public function RestaurarProducto($datos){
+            $con = new conectar();
+            $conexion = $con->conexion();
+
+            $status = 1;
+
+            $sql = "UPDATE producto SET estado = '$status' WHERE codigo = '$datos[0]'";
+
+            $result = mysqli_query($conexion, $sql);
+
+            if(mysqli_num_rows($result) > 0){
+
+                return header('location:../views/products.php');
+
+            }else{
+                return header('location:../views/products.php');
+            }
+        }
     }
 
 ?>

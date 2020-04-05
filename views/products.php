@@ -53,7 +53,6 @@ if (isset($_SESSION['usuario'])) {
                     <li><a href="suppliers.php"><i class="fas fa-pallet"></i>Proveedores</a></li>
                     <li><a href="reports.php"><i class="fas fa-file-chart-pie"></i>Reportes</a></li>
                     <li><span> <i class="fas fa-parachute-box"></i>Otros Servicios</span>
-                    <li><span> <i class="fas fa-parachute-box"></i>Otros Servicios</span>
                         <ul class="submenu">
                             <li><a href="employeesDelete.php"><i class="fas fa-address-card"></i>Empleados Eliminados</a></li>
                             <li><a href="clientsDelete.php"><i class="fas fa-restroom"></i>Clientes Eliminados</a></li>
