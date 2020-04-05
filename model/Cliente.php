@@ -54,6 +54,25 @@
                 return header('location:../views/clients.php');
             }
         }
+
+        public function RestaurarCliente($datos){
+            $con = new conectar();
+            $conexion = $con->conexion();
+
+            $status = 1;
+
+            $sql = "UPDATE cliente SET estado = '$status' WHERE pasaporte = '$datos[0]'";
+
+            $result = mysqli_query($conexion, $sql);
+
+            if(mysqli_num_rows($result) > 0){
+
+                return header('location:../views/clients.php');
+
+            }else{
+                return header('location:../views/clients.php');
+            }
+        }
     }
 
 ?>
