@@ -56,6 +56,25 @@
             }
         }
 
+        public function RestaurarEmpleado($datos){
+            $con = new conectar();
+            $conexion = $con->conexion();
+
+            $status = 1;
+
+            $sql = "UPDATE empleado SET estado = '$status' WHERE ci = '$datos[0]'";
+
+            $result = mysqli_query($conexion, $sql);
+
+            if(mysqli_num_rows($result) > 0){
+
+                return header('location:../views/employees.php');
+
+            }else{
+                return header('location:../views/employees.php');
+            }
+        }
+
 
     }
 
