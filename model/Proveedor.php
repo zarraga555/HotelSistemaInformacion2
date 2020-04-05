@@ -54,6 +54,25 @@
                 return header('location:../views/suppliers.php');
             }
         }
+
+        public function RestaurarProveedor($datos){
+            $con = new conectar();
+            $conexion = $con->conexion();
+
+            $status = 1;
+
+            $sql = "UPDATE proveedores SET estado = '$status' WHERE nit = '$datos[0]'";
+
+            $result = mysqli_query($conexion, $sql);
+
+            if(mysqli_num_rows($result) > 0){
+
+                return header('location:../views/suppliers.php');
+
+            }else{
+                return header('location:../views/suppliers.php');
+            }
+        }
     }
 
 ?>
