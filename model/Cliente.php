@@ -73,6 +73,34 @@
                 return header('location:../views/clients.php');
             }
         }
+        public function ObtenerDatosCliente($idcliente){
+            $con = new conectar();
+            $conexion = $con->conexion();
+
+            $status = 1;
+
+            $sql = "SELECT nombre, sexo, telefono, email, fechaNacimiento, nacionalidad FROM cliente WHERE pasaporte = '$idcliente'";
+
+            $result = mysqli_query($conexion, $sql);
+
+            $ver = mysqli_fetch_row($result);
+
+            $datos = array(
+                'nombre' => $ver[0], 
+                'sexo' => $ver[1], 
+                'telefono' => $ver[2], 
+                'email' => $ver[3], 
+                'fechaNacimiento' => $ver[4], 
+                'nacionalidad' => $ver[5] );
+
+            if(mysqli_num_rows($result) > 0){
+                return $datos;
+            }else{
+                return 0;
+            }
+
+            
+        }
     }
 
 ?>

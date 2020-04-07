@@ -10,8 +10,7 @@
 
             $result = mysqli_query($conexion, $sql);
 
-            $_SESSION['usuario'] = $datos[0];
-            $_SESSION['iduser'] = self::traeID($datos);
+            $_SESSION['usuario'] = $_SESSION['rol'] = self::traeID($datos);
 
 
             if(mysqli_num_rows($result) > 0){
@@ -26,7 +25,7 @@
             $con = new conectar();
             $conexion = $con->conexion();
 
-            $sql = "SELECT usuario FROM usuarios WHERE usuario = '$datos[0]' AND  pass = '$datos[1]'";
+            $sql = "SELECT rol FROM usuarios WHERE usuario = '$datos[0]' AND  pass = '$datos[1]'";
 
             $result = mysqli_query($conexion, $sql);
             

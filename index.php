@@ -34,6 +34,7 @@
                   <div class="text-center">
                     <h1 class="h4 text-gray-900 mb-4 text-title">Bienvenido</h1>
                   </div>
+
                   <form class="user" method="post" action="controller/logeo.php">
                     <div class="form-group">
                       <input type="text" name="txtusuario" class="form-control form-control-user" pattern="[A-Za-z0-9_-]{1,15}" required id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Usuario">
@@ -43,6 +44,7 @@
                     </div>
                     <button name="btniniciar" class="btn btn-primary btn-user btn-block">Iniciar Sesion</button>
                   </form>
+                  
                   <!-- <hr> -->
                 </div>
               </div>
